@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2023-03-27T18:16:14.011Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="j0NGxThmkLH5bXgSt3ap" version="21.1.1" type="github">
+  <diagram name="Página-1" id="H0H8dAaTxB-ISCYqH2sw">
+    <mxGraphModel dx="1434" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="71oLMjFAklZJy5hX65Ag-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-2" target="71oLMjFAklZJy5hX65Ag-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-2" value="APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-3" target="71oLMjFAklZJy5hX65Ag-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="265" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-3" target="71oLMjFAklZJy5hX65Ag-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-3" value="API&lt;br&gt;FASTAPI&lt;br&gt;(Cloud Run)&lt;br&gt;SERVERLESS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-5" value="BD&lt;br&gt;(Cloud SQL)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-7" target="71oLMjFAklZJy5hX65Ag-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="135" />
+              <mxPoint x="460" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-7" value="Bucket&lt;br&gt;(Google Storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="350" y="90" width="67.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-9" value="/user/photosUploaded&lt;br&gt;/dataToTrain/" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-10" value="Entrenamiento&lt;br&gt;Prepro&lt;br&gt;Apache Beam" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-12" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="430" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-13" target="71oLMjFAklZJy5hX65Ag-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-13" value="Script&lt;br&gt;Python" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="430" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-15" value="Scrapper&lt;br&gt;Instagram&lt;br&gt;&lt;br&gt;Obtener todas las fotos de un perfil&lt;br&gt;&lt;br&gt;Para hacer Mejoras en el dataset" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="30" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.877;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-16" target="71oLMjFAklZJy5hX65Ag-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-16" value="Web BackOffice&lt;br&gt;&lt;br&gt;Dashboard&lt;br&gt;&lt;br&gt;- Cantidad de usuarios&lt;br&gt;- Cantidad de fotos&lt;br&gt;- Calculos realizados por Squeduler" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="190" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="71oLMjFAklZJy5hX65Ag-17" target="71oLMjFAklZJy5hX65Ag-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="550" />
+              <mxPoint x="20" y="550" />
+              <mxPoint x="20" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71oLMjFAklZJy5hX65Ag-17" value="Squeduler&lt;br&gt;&lt;br&gt;Calcular los datos a mostrar en la web" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="360" width="130" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
