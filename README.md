@@ -1,5 +1,5 @@
 # Presentación
-![Presentación en CANVA]([architecture.jpg](https://www.canva.com/design/DAFhUQ6l6Bg/ZjOevy1ugOC7n7qP2muYUQ/edit?utm_content=DAFhUQ6l6Bg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
+![Presentación en CANVA](https://www.canva.com/design/DAFhUQ6l6Bg/ZjOevy1ugOC7n7qP2muYUQ/edit?utm_content=DAFhUQ6l6Bg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 # Memoria
 
