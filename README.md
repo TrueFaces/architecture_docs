@@ -11,7 +11,7 @@ El objetivo final es aplicarlo con una galería asociado a un evento.
 
 Ej: Un evento cumpleaños que tiene usuarios asignados y todo el mundo pueda subir fotos y ordenar o filtrar esas fotos por la identidad de la persona.
 
-## App
+## App [Repositorio](https://github.com/TrueFaces/true_faces_android)
 
 En la app se han seleccionado las siguientes herramientas, frameworks y librerías:
 
@@ -57,7 +57,7 @@ Para el entrenamiento del modelo VGG16 se han utilizado dos dataset de imagenes.
 
 Se han redimensionado las imagenes para el entrenamiento del modelo en escala RGB(100x100x3) para deducir la complejidad del modelo
 
-## La arquitectura de este modelo es la siguiente:
+## La arquitectura de este modelo es la siguiente: [Repositorio](https://github.com/TrueFaces/CNN-FineTuning)
 
 Se carga el modelo pre-entrenado VGG16 sin la capa superior 
 (include_top=False) y se congela su pesos para que no se actualicen 
@@ -123,7 +123,7 @@ Toda la arquitectura ha sido diseñada con las diferentes herramientas que propo
     
     La aplicación móvil ha sido desarrollada para el sistema Android con el lenguaje de programación Kotlin
     
-2. API de la aplicación móvil. (Cloud RUN)
+2. API de la aplicación móvil. (Cloud RUN) [Repositorio](https://github.com/TrueFaces/fastapi-test)
     
     Ha sido desarrollado con el framework FASTAPI en el lenguaje de programación Python. Dispone de la ruta /docs en la que se podrá encontrar la interfaz gráfica Swagger como documentación. El API se encuentra desplegado como contendor Docker bajo la herramienta Cloud Run. Se ha seleccionado esta herramienta principamente por su facilidad de configuración para los despliegues automáticos y su adaptación a la carga del sistema pudiendo escalar de forma automática.
     
@@ -153,7 +153,7 @@ Toda la arquitectura ha sido diseñada con las diferentes herramientas que propo
         - GET /images/<id>/download → Descarga del fichero imagen
         - DELETE /images/<id> → ELiminar la imagen de la aplicación. Borra también del bucket
     
-3. API para el entrenamiento del modelo. (Compute Engine, Cloud Scheduler)
+3. API para el entrenamiento del modelo. (Compute Engine, Cloud Scheduler) [Repositorio](https://github.com/TrueFaces/trainning)
     
     Ha sido desarrollado con el framework FASTAPI en el lenguaje de programación Python. Dispone de la ruta /docs en la que se podrá encontrar la interfaz gráfica Swagger como documentación. El API se encuentra hospedado en una máquina virtual de la herramienta Compute Engine. Se ha optado por esta herramienta debido a los elevados tiempos de proceso para el entrenamiento del modelo. El entrenamiento del modelo será lanzado con un cron programado semanalmente con la herramienta Cloud Scheduler.
     
@@ -162,7 +162,7 @@ Toda la arquitectura ha sido diseñada con las diferentes herramientas que propo
     - Obtención de las imágenes desde el sistema de almacenamiento.
     - Entrenamiento del modelo. Dispone de un endpoint para poder lanzarlo de forma programada desde un programador de eventos. Una vez terminado el entrenamiento desplegará el modelo en el sistema de almacenamiento para poder ser utilizado desde el contenedor del API de la aplicación
     - Una vez entrenado el modelo despliegue en el sistema de almacenamiento (.h5)
-4. Scrapper (Compute Engine, Cloud Scheduler)
+4. Scrapper (Compute Engine, Cloud Scheduler) [Repositorio](https://github.com/TrueFaces/Scraping-Instagram)
     
     Ha sido desarrollado con el framework FASTAPI en el lenguaje de programación Python. El scrapper se encuantra hospedado en una máquina virtual de la herramienta Compute Engine. Será lanzado con un cron programado semanalmente con la herramienta Cloud Scheduler.
     
